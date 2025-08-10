@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about facial recognition technology and its benefits.">
+    <title>Facial Recognition | Secure & Efficient AI Solutions</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">Face Recognition System</div>
+        <nav>
+            <a href="{{ url_for('signup') }}"class="logo">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Next Level of Security & Efficiency</h1>
+            <p>Facial Recognition Technology</p>
+        </div>
+    </section>
+    
+    <main>
+        <section class="content">
+            <h2>What is facial recognition?</h2>
+            <div class="grid-container">
+                <div class="img">
+                    <img src="{{ url_for('static', filename='images/2.jpg') }}" alt="Illustration of facial recognition technology analyzing a face" loading="lazy">
+                </div>
+                <p>Facial recognition is a technology used to verify personal identities by analyzing facial features from an image or video.</p>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <h2>What are the benefits of facial recognition?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/3.png') }}" alt="Security shield icon" loading="lazy">
+                    <h3>Security</h3>
+                    <p>Facial recognition technology uses dedicated algorithms and mathematical patterns to process biometric data. It is by far one of the safest identification methods to effectively reduce the risk of unauthorized access.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/4.png') }}" alt="High accuracy icon" loading="lazy">
+                    <h3>Accuracy</h3>
+                    <p>Facial recognition is a more accurate way to identify a person than simply using a mobile number, an ID card, or a PIN code. And, in most applications, the algorithms feature an almost perfect degree of accuracy.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/5.png') }}" alt="Easy-to-use icon" loading="lazy">
+                    <h3>Easy to Use</h3>
+                    <p>Facial detection and recognition takes less than a second and is touch-free, unlike using passwords or fingerprints. It is very convenient for users. Algorithm-based, the technology deploys easily across various devices.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers">
+            <h2>What features does our system provide?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/6.png') }}" alt="Real-Time Face Detection" loading="lazy">
+                    <h3>Real-Time Face Detection</h3>
+                    <p>Instantly detects and recognizes faces with high accuracy using advanced AI algorithms.</p>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/7.png') }}" alt="Face Capture & Dataset Creation" loading="lazy">
+                    <h3>Face Capture & Dataset Creation</h3>
+                    <p>Automatically captures faces and stores them in a structured dataset for training AI models.</p>
+                </div>
+                
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/7.webp') }}" alt="AI Model Training on Dataset" loading="lazy">
+                    <h3>AI Model Training on Dataset</h3>
+                    <p>Train machine learning models using collected facial data for improved accuracy and recognition.</p>
+                </div>
+
+                <div class="card">
+                    <img src="{{ url_for('static', filename='images/8.webp') }}" alt="Facial Recognition" loading="lazy">
+                    <h3>Facial Recognition</h3>
+                    <p>Identify and verify individuals based on unique facial features.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Facial Recognition Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

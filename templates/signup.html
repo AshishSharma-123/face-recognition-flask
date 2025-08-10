@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition System - Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/auth.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-header">
+            
+            <h1>Create Your Account</h1>
+            <p>Join our face recognition system today</p>
+        </div>
+        
+        <form action="/signup" method="POST" class="auth-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Create a password" required minlength="4">
+                <div class="password-hint">Minimum 4 characters</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+            
+            <form action="/signup" method="POST" class="auth-form">
+                <!-- form fields -->
+                <button type="submit" class="auth-button">Sign Up</button>
+            </form>
+            
+            
+            <div class="auth-footer">
+                <p>Already have an account? <a href="/signin">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

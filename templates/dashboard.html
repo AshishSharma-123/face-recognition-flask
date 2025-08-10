@@ -1,0 +1,29 @@
+
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="dashboard">
+            <h1>Welcome to your Dashboard!</h1>
+            <p>Hello, {{username|upper}}</p>
+    
+            <div class="dashboard-buttons">
+                <button id="createDatasetBtn">Create Dataset</button>
+                <button onclick="location.href='/train-model'">Train Model</button>
+                <button onclick="location.href='/recognize-face'">Recognize Face</button>
+            </div>
+        </div>
+    
+        <!-- This holds the message -->
+        <div id="messageBox" data-message="{{ message | safe }}" style="display: none;"></div>
+    
+        <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+    </body>
+    
+</html>
+
